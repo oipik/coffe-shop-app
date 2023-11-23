@@ -1,0 +1,28 @@
+.logo__outer {
+    display: flex;
+}
+.logo__container {
+    margin: 0 auto;
+    position: relative;
+}
+.logo__container::before {
+    bottom: 50%;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 60px;
+    left: 55px;
+    background-color: #FFF;
+}
+.logo__container::after {
+    bottom: 50%;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 60px;
+    right: 55px;
+    background-color: #FFF;
+}
+.black::after, .black::before {
+    background-color: black;
+}

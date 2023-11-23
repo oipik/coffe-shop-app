@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    align-items: baseline;
+    &__list {
+        display: flex;
+        li:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__item {
+        margin-right: 40px;
+    }
+    &__link {
+        color: #FFF;
+        font-family: Merienda;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
