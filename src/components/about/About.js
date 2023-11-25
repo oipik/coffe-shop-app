@@ -6,7 +6,7 @@ import './about.scss';
 
 const About = (props) => {
 
-    const { clazz, src, title, text } = props;
+    const { src, title, clazz, text } = props;
 
     return (
         <section className={`about ${clazz}`}>

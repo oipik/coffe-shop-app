@@ -15,9 +15,9 @@ const Products = ({ products }) => {
     return (
         <section className="products">
             <div className="container">
-                <div className="products__inner">
+                <ul className="products__inner">
                     {elements}
-                </div>
+                </ul>
             </div>
         </section>
     )
@@ -25,14 +25,16 @@ const Products = ({ products }) => {
 
 const Product = ({ name, country, price, src, alt }) => {
     return (
-        <div className="products__items">
-            <img className="products__img"
-                src={src}
-                alt={alt} />
-            <p className="products__text products__text--name">{name}</p>
-            <p className="products__text products__text--country">{country}</p>
-            <p className="products__text products__text--price">{price + '$'}</p>
-        </div>
+        <li className="products__items">
+            <a href="#">
+                <img className="products__img"
+                    src={src}
+                    alt={alt} />
+                <p className="products__text products__text--name">{name}</p>
+                <p className="products__text products__text--country">{country}</p>
+                <p className="products__text products__text--price">{price + '$'}</p>
+            </a>
+        </li>
     );
 }
 

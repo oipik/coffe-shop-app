@@ -11,7 +11,7 @@ import Products from '../products/Products';
 import SearchPanel from '../searchPanel/SearchPanel';
 import Filter from '../filter/Filter';
 
-import { img1, img2, img3, girlWithCoffe, product, Italy, smell } from '../../images/images';
+import { img1, img2, img3, girlWithCoffee, product, Italy, smell } from '../../images/images';
 
 import '../../reset.css'
 import './app.scss';
@@ -32,7 +32,7 @@ function App() {
     const [filter, setFilter] = useState('all');
 
     const menu = ['Coffee house', 'Our house', 'For your pleasure'];
-    const ourBest = [
+    const cards = [
         { name: 'Solimo Coffee Beans 2 kg', src: img1, price: 10.73 },
         { name: 'Presto Coffee Beans 1 kg', src: img2, price: 15.99 },
         { name: 'AROMISTICO Coffee 1 kg', src: img3, price: 6.99 },
@@ -77,12 +77,13 @@ function App() {
         <>
             {/* <HeaderMain menu={menu}/>
             <AboutMain />
-            <OurBest items={ourBest} />
+            <OurBest items={cards} />
             <Footer menu={menu} /> */}
 
             {/* <CoffeeHeader menu={menu} title={'Our Coffe'} clazz={'coffee-header'}/>
             <About
-                src={girlWithCoffe}
+                clazz='coffee'
+                src={girlWithCoffee}
                 title="About our beans"
                 text={[
                     'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -100,7 +101,7 @@ function App() {
             <Products products={visibleData} />
             <Footer menu={menu} /> */}
 
-            <CoffeeHeader menu={menu} title={'Our Coffee'} clazz={'coffee-header'}/>
+            {/* <CoffeeHeader menu={menu} title={'Our Coffee'} clazz={'italy-header'}/>
             <About
                 clazz='italy'
                 src={Italy}
@@ -110,9 +111,9 @@ function App() {
                     [<strong>Description:</strong>, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."], 
                     [<strong>Price:</strong>, <span style={{fontSize: 24}}> 16.99$</span>]
                 ]}/>
-            <Footer menu={menu} />
+            <Footer menu={menu} /> */}
 
-            {/* <CoffeeHeader menu={menu} title={'For your pleasure'} clazz={'pleasure-header'} />
+            <CoffeeHeader menu={menu} title={'For your pleasure'} clazz={'pleasure-header'} />
             <About
                 clazz='pleasure'
                 src={smell}
@@ -123,7 +124,7 @@ function App() {
                     'As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.'
                 ]}/>
             <Products products={products} />
-            <Footer menu={menu} /> */}
+            <Footer menu={menu} />
         </>
     )
 }

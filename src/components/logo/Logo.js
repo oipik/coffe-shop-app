@@ -1,6 +1,6 @@
 import './logo.scss';
 
-const LogoWhite = (props) => {
+const Logo = (props) => {
 
     const logoBlack = props.isLogoBlack ? 'black' : null;
 
@@ -13,4 +13,4 @@ const LogoWhite = (props) => {
     )
 }
 
-export default LogoWhite;
+export default Logo;

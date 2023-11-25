@@ -15,9 +15,11 @@ const Items = ({ items }) => {
     const list = items.map((item, i) => {
         return (
             <li className="ourbest__item" key={i}>
-                <img src={item.src} alt={item.name} />
-                <p className='ourbest__name'>{item.name}</p>
-                <p className='ourbest__price'>{item.price}$</p>
+                <a href="#">
+                    <img src={item.src} alt={item.name} />
+                    <p className='ourbest__name'>{item.name}</p>
+                    <p className='ourbest__price'>{item.price}$</p>
+                </a>
             </li>
         )
     })
