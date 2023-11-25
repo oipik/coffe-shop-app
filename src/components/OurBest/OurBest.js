@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './ourbest.scss';
 
 const OurBest = (props) => {
@@ -15,11 +17,11 @@ const Items = ({ items }) => {
     const list = items.map((item, i) => {
         return (
             <li className="ourbest__item" key={i}>
-                <a href="#">
+               <Link to={`/place`}>
                     <img src={item.src} alt={item.name} />
                     <p className='ourbest__name'>{item.name}</p>
                     <p className='ourbest__price'>{item.price}$</p>
-                </a>
+                </Link>
             </li>
         )
     })
