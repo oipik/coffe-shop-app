@@ -1,0 +1,37 @@
+.products {
+    margin: 60px 0 30px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px 70px;
+    }
+    &__items {
+        max-width: 220px;
+        height: 260px;
+        border-radius: 8px;
+        background: #FFF;
+        padding: 35px 23px 20px 23px;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+    }
+    &__img {
+        margin-bottom: 14px;
+    }
+    &__text {
+        color: #000;
+        text-align: right;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+        &--name {
+            text-align: center;
+        }
+        &--price {
+            font-weight: 700;
+        }
+    }
+}
+

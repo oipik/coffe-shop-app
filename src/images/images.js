@@ -7,6 +7,9 @@ import LogoWhiteFull from './logoWhiteFull.svg';
 import logoBlack from './logoBlack.svg';
 import logoBlackFull from './logoBlackFull.svg';
 
-import girlWithCoffe from '../images/coffee-page/girl with coffee.jpg'
+import girlWithCoffe from '../images/coffee-page/girl with coffee.jpg';
+import product from '../images/coffee-page/products/product.png';
+import Italy from '../images/coffee-page/ItalyCoffe.jpg';
+import smell from '../images/coffee-page/smell.png';
 
-export {logoWhite, LogoWhiteFull, logoBlack, logoBlackFull, img1, img2, img3, girlWithCoffe};
+export {logoWhite, LogoWhiteFull, logoBlack, logoBlackFull, img1, img2, img3, girlWithCoffe, product, Italy, smell};

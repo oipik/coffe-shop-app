@@ -1,0 +1,91 @@
+.about {
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        padding: 70px 0 60px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 240px;
+            height: 1px;
+            bottom: -55px;
+            background-color: #000;
+        }
+    }
+    &__title {
+        margin-top: 10px;
+        color: #000;
+        font-family: Merienda;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__box-text {
+        margin-top: 25px;
+        max-width: 350px;
+        color: #000;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__text {
+        margin-bottom: 15px;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    &__hr {
+        width: 240px;
+        height: 1px;
+        background-color: #000;
+    }
+}
+
+.italy .about{
+    &__items {
+        &:after {
+            content: none;
+        }
+        padding: 70px 0 30px;
+    }
+    &__box-text {
+        text-align: left;
+    }
+    &__text {
+        margin-bottom: 15px;
+    }
+    ;
+    &__hr {
+        width: 240px;
+        height: 1px;
+        background-color: #000;
+    }
+}
+
+.pleasure .about {
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        padding: 70px 0 60px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 240px;
+            height: 1px;
+            bottom: 0;
+            background-color: #000;
+        }
+    }
+}
+
+
+
+

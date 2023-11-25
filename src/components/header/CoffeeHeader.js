@@ -3,16 +3,17 @@ import { logoWhite } from '../../images/images';
 
 import './coffeeHeader.scss';
 
-const CoffeeHeader = (props) => {
+const CoffeeHeader = ({ menu, title, clazz }) => {
+
     return (
-        <section className="header coffee-header">
-        <div className="header__inner">
-            <div className="header__navigation">
-                <Menu logo={logoWhite} names={props.menu} />
+        <section className={`header ${clazz}`}>
+            <div className="header__inner">
+                <div className="header__navigation">
+                    <Menu logo={logoWhite} names={menu} />
+                </div>
+                <h1 className="header__title">{title}</h1>
             </div>
-            <h1 className="header__title">Our Coffee</h1>
-        </div>
-    </section>
+        </section>
     )
 }
 
