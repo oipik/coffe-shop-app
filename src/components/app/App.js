@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HeaderMain from '../headerMain/HeaderMain';
 import AboutMain from '../aboutMain/AboutMain';
-import OurBest from '../OurBest/OurBest';
+import OurBest from '../ourBest/OurBest';
 import Footer from '../footer/Footer';
 
 import CoffeeHeader from '../header/CoffeeHeader';
@@ -20,7 +20,7 @@ import './app.scss';
 
 function App() {
 
-    const [products, setProducts] = useState(
+    const [products] = useState(
         [
             { name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: 6.99, src: product, alt: 'Brazil Coffee', id: 1 },
             { name: 'AROMISTICO Coffee 1 kg', country: 'Kenya', price: 25, src: product, alt: 'Kenya Coffee', id: 2 },
@@ -34,9 +34,9 @@ function App() {
     const [filter, setFilter] = useState('all');
 
     const menu = [
-        {name: 'Coffee house', src: '/'}, 
-        {name: 'Our house', src: '/coffee'},
-        {name: 'For your pleasure', src: '/pleasure'}
+        { name: 'Coffee house', src: '/' },
+        { name: 'Our house', src: '/coffee' },
+        { name: 'For your pleasure', src: '/pleasure' }
     ];
     const cards = [
         { name: 'Solimo Coffee Beans 2 kg', src: img1, price: 10.73 },
@@ -120,7 +120,7 @@ function App() {
                         clazz='italy'
                         src={Italy}
                         title="About it"
-                        text={[ 
+                        text={[
                             [<strong>Country:</strong>, 'Brasil'],
                             [<strong>Description:</strong>, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
                             [<strong>Price:</strong>, <span style={{ fontSize: 24 }}> 16.99$</span>]
@@ -144,7 +144,7 @@ function App() {
                     <Footer menu={menu} />
                 </>}>
                 </Route>
-                <Route path="*" element={<Page404/>}/>
+                <Route path="*" element={<Page404 />} />
             </Routes>
         </Router>
     )
